@@ -152,7 +152,7 @@ public class BMIAndVO2MaxCalculator {
 
         //Display VO2Max Results
         System.out.println("Resting Heart Rate: " + restingHR + " bpm");
-        System.out.println("Maximum Heart Rate: " + maxHR + "bpm");
+        System.out.println("Maximum Heart Rate: " + maxHR + " bpm");
         System.out.printf("Estimated VO2 Max: %.2f ml/kg/min%n", vo2Max);
 
         // VO2 Max interpretation by age and gender
@@ -191,3 +191,4 @@ public class BMIAndVO2MaxCalculator {
         return "Poor";
     }
 }
+
