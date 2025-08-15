@@ -51,7 +51,7 @@ public class BMIAndVO2MaxCalculator {
         // Get resting heart rate
         while (true) {
             try {
-                System.out.print("Enter your resting heart rate (BPM): ");
+                System.out.print("Enter your resting heart rate in beats per minute: ");
                 restingHR = scanner.nextInt();
                 if (restingHR <= 0) {
                     System.out.println("Resting heart rate must be greater than 0.");
@@ -67,7 +67,7 @@ public class BMIAndVO2MaxCalculator {
         // Get maximum heart rate
         while (true) {
             try {
-                System.out.print("Enter your maximum heart rate (BPM): ");
+                System.out.print("Enter your maximum heart rate in beats per minute: ");
                 maxHR = scanner.nextInt();
                 if (maxHR <= 0 || maxHR <= restingHR) {
                     System.out.println("Max heart rate must be greater than resting heart rate.");
@@ -191,4 +191,5 @@ public class BMIAndVO2MaxCalculator {
         return "Poor";
     }
 }
+
 
